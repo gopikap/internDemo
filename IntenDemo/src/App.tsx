@@ -15,7 +15,6 @@ import "./App.css";
 import Timer from "./components/RefSample";
 import { useAuth } from "./context/useAuth";
 import PostList from "./components/SampleApiHook";
-import AppRoutes from "./Routes";
 
 type View = "home" | "login" | "signup" | "api-demo" | "custom-hook-demo";
 
@@ -51,7 +50,6 @@ function App() {
 
   return (
     <div className="app">
-      Props: pass state values and setter callbacks down to Navbar
       <Navbar
         currentView={currentView}
         onNavigate={handleNavigate}

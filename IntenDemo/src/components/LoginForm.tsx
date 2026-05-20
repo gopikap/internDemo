@@ -1,7 +1,7 @@
 // Concepts demonstrated: Props, State, Forms, Event Handling, Validation
 // Demo credentials: username = "demo" | password = "demo"
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FormInput from "./FormInput";
 import Button from "./Button";
 
