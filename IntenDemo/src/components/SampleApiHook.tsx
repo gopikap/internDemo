@@ -1,4 +1,3 @@
-import { CircularProgress } from "@mui/material";
 import useFetch from "../hooks/useFetch";
 interface Post {
   id: number;
@@ -12,15 +11,14 @@ function PostList() {
   );
   if (loading) {
     return (
-      <CircularProgress />
-      // <div>
-      //   {[1, 2, 3].map((i) => (
-      //     <div key={i} className="animate-pulse">
-      //       <div className="h-4 bg-gray-200 rounded mb-2" />
-      //       <div className="h-3 bg-gray-100 rounded w-3/4" />
-      //     </div>
-      //   ))}
-      // </div>
+      <div>
+        {[1, 2, 3].map((i) => (
+          <div key={i} className="animate-pulse">
+            <div className="h-4 bg-gray-200 rounded mb-2" />
+            <div className="h-3 bg-gray-100 rounded w-3/4" />
+          </div>
+        ))}
+      </div>
     );
   }
   if (error) {
