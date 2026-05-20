@@ -39,30 +39,4 @@ function PostList() {
   );
 }
 
-//   if (loading) return <CircularProgress />;
-//  if (error) return <Alert severity="error">{error}</Alert>;
-//   return (
-//     <>
-// // 1. Loading skeleton
-
-//  const { data: posts, loading, error } = useFetch('/api/posts');
-
-//   // 2. Error with retry
-//   if (error) {
-//     return (
-//       <div className="text-center">
-//         <p className="text-red-500">{error}</p>
-//         <button onClick={() => window.location.reload()}>
-//           Retry
-//         </button>
-//       </div>
-//     );
-//   }
-
-//   // 3. Empty state
-//   if (!posts?.length) return <p>No posts found.</p>;
-
-//   // 4. Success state
-//   return <ul>{posts.map(p => <PostCard key={p.id} {...p} />)}</ul>;
-
 export default PostList;
